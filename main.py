@@ -1,3 +1,4 @@
+#main file to do stuff
 import os
 from sys import argv
 from config.main_utils import checkAlive, checkVendor, getAll, createTable, sortOutput
@@ -19,7 +20,7 @@ def getInventory(*args):
 
 if __name__ == '__main__':
     alive_hosts = []
-    #find subnets file to check 
+    #find subnets file to check
     if len(argv) == 1:
         file_name = 'config/subnets.txt'
     else:
